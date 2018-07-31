@@ -52,47 +52,53 @@ class FunctionsTest < MiniTest::Test
     assert_equal( "January", month )
   end
 
-#   def test_month_by_number__month_3()
-#     month = number_to_full_month_name( 3 )
-#     assert_equal( "March", month )
-#   end
-#
-#   def test_month_by_number__month_9()
-#     month = number_to_full_month_name( 9 )
-#     assert_equal( "September", month )
-#   end
-#
-#   def test_substring__month_1()
-#     first_month_short = number_to_short_month_name( 1 )
-#     assert_equal( "Jan", first_month_short )
-#   end
-#
-#   def test_substring__month_4()
-#     fourth_month_short = number_to_short_month_name( 4 )
-#     assert_equal( "Apr", fourth_month_short )
-#   end
-#
-#   def test_substring__month_10()
-#     tenth_month_short = number_to_short_month_name( 10 )
-#     assert_equal( "Oct", tenth_month_short )
-#   end
-#
-#   # Further
-#
-#   # Given the length of a side of a cube calculate the volume
-#   def test_volume_of_a_cube()
-#     # add test code here
-#   end
-#
-#   # Given the radius of a sphere calculate the volume
-#   def test_volume_of_a_sphere()
-#     # add test code here
-#   end
-#
-#   # Given a temperature in degrees farenheit, convert this into celsius.
-#   def test_convert_fahrenheit_to_celsius()
-#     # add test code here
-#   end
-#
+  def test_month_by_number__month_3()
+    month = number_to_full_month_name( 3 )
+    assert_equal( "March", month )
+  end
+
+  def test_month_by_number__month_9()
+    month = number_to_full_month_name( 9 )
+    assert_equal( "September", month )
+  end
+
+  def test_substring__month_1()
+    first_month_short = number_to_short_month_name( 1 )
+    assert_equal( "Jan", first_month_short )
+  end
+
+  def test_substring__month_4()
+    fourth_month_short = number_to_short_month_name( 4 )
+    assert_equal( "Apr", fourth_month_short )
+  end
+
+  def test_substring__month_10()
+    tenth_month_short = number_to_short_month_name( 10 )
+    assert_equal( "Oct", tenth_month_short )
+  end
+
+  # Further
+
+  # Given the length of a side of a cube calculate the volume
+  def test_volume_of_a_cube()
+    length = 3
+    result_of_volume = volume_of_a_cube(length)
+    assert_equal( 27, result_of_volume )
+  end
+
+  # Given the radius of a sphere calculate the volume
+  def test_volume_of_a_sphere()
+    radius = 6
+    result_of_volume = volume_of_a_sphere(radius)
+    assert_equal( 904.78, result_of_volume)
+  end
+
+  # Given a temperature in degrees farenheit, convert this into celsius.
+  def test_convert_fahrenheit_to_celsius()
+    farenheit = 0
+    result_of_temp = fahrenheit_to_celsius(farenheit)
+    assert_equal( -17.78, result_of_temp)
+  end
+
 
 end
