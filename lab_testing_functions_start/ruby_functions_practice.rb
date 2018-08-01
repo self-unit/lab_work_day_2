@@ -1,3 +1,5 @@
+require 'date'
+
 def return_10
   return 10
 end
@@ -32,12 +34,10 @@ def add_string_as_number(string_1, string_2)
 end
 
 def number_to_full_month_name(month)
-  require 'date'
   Date::MONTHNAMES[month]
 end
 
 def number_to_short_month_name(month)
-  require 'date'
   Date::ABBR_MONTHNAMES[month]
 end
 
